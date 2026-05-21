@@ -1,0 +1,17 @@
+name: ProtectionLimit
+version: '${project.version}'
+main: de.plugin.protectionlimit.ProtectionLimitPlugin
+api-version: '1.21'
+description: Limits Protection enchantment to level III on armor and books.
+authors: [ ]
+
+commands:
+  protectionlimit:
+    description: Scans and fixes all online players' inventories.
+    usage: /protectionlimit fix
+    permission: protectionlimit.admin
+
+permissions:
+  protectionlimit.admin:
+    description: Allows running /protectionlimit fix
+    default: op
